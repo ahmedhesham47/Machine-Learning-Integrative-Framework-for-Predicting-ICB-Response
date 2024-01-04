@@ -1,0 +1,47 @@
+## Project Overview
+
+**Title:** Predicting the Response to Immune Checkpoint Blockade (ICB) Therapy Using Integrative Data Sources
+
+**Objective:** This project aims to develop a machine learning model capable of predicting the response to ICB therapy by integrating various genomic data sources.
+
+## Project Architecture
+
+1. **Data Pre-processing:**
+   - Data is preprocessed using libraries such as `pandas` and `numpy`.
+   - Pre-processing steps are implemented for different types of data:
+       - Immune cell abundance
+       - Clinical data
+       - Copy Number Alteration (CNA) mutation data
+       - Gene expression data
+       - SNP mutation data, transformed into a binary matrix
+   - The preprocessing step was implemented to deal with different data sources through implementing functions which give the code gereralizability.
+
+2. **Data Integration:**
+   - Multiple data sources are integrated to create a comprehensive dataset.
+   - Techniques used include merging columns based on common identifiers.
+
+3. **Feature Selection and Engineering:**
+   - Tools like 'Random Forest', 'RFE (Recursive Feature Elimination)', 'SelectFromModel', 'Correlation', 'Gradient Boosting', and 'FDR'.
+   - Makes combinations of five of the previously mentioned methods, and chooses the combination which gives us the highest number of intersected genes.
+
+4. **Model Building:**
+   - Various models like Random Forest Classifier, Support Vector Machine Classifier, and Logistic Regression are experimented with.
+   - Hyperparameter tuning is performed using GridSearchCV.
+   - Cross-validation is conducted to ensure the robustness of the model.
+   - Model evaluation using metrics such as accuracy score, F1 score, test accuracy, and ROC AUC score.
+
+## Design Decisions
+
+- **Choice of Algorithms:** The selection of models like RandomForest, GradientBoosting, and Logistic Regression is driven by their proven efficacy in handling complex datasets with mixed data types.
+- **Feature Selection Techniques:** The intersection between different five selection methods gives trust to our selected genes.
+- **Data Preprocessing:** Custom functions are designed for preprocessing specific to genomic data, considering the unique nature of such datasets.
+
+## Algorithms Used
+
+1. **Random Forest Classifier:** An ensemble learning method for classification.
+2. **SVM (Support Vector Machine):** Supervised learning models with associated learning algorithms for classification and regression analysis.
+3. **Logistic Regression:** A statistical model that uses a logistic function to model a binary dependent variable.
+
+## Dependencies
+
+- **Python Libraries:** pandas, numpy, sklearn, matplotlib, scipy, itertools.
