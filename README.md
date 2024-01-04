@@ -17,7 +17,7 @@ Matplotlib
 Scipy
 ### Installation
 Clone the repository to your local machine:
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/ahmedhesham47/Machine-Learning-Integrative-Framework-for-Predicting-ICB-Response/
 ### Usage
 Navigate to the project directory and run the Jupyter notebook:
 cd path/to/your-repository
