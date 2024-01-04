@@ -17,11 +17,11 @@ Matplotlib
 Scipy
 ### Installation
 Clone the repository to your local machine:
-git clone https://github.com/ahmedhesham47/Machine-Learning-Integrative-Framework-for-Predicting-ICB-Response/
+- git clone https://github.com/ahmedhesham47/Machine-Learning-Integrative-Framework-for-Predicting-ICB-Response/
 ### Usage
 Navigate to the project directory and run the Jupyter notebook:
-cd path/to/your-repository
-jupyter notebook
+- cd path/to/your-repository
+- jupyter notebook
 ## Data
 The project uses three main types of data:
 Gene Expression Data
